@@ -9,6 +9,8 @@ return {
 				indent = {
 					enabled = true,
 					per_level = 2,
+					icon = "",
+					highlight = "None",
 				},
 				bullet = {
 					left_pad = 4,

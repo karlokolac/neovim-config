@@ -18,7 +18,6 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			local lspkind = require("lspkind")
-			local devicons = require("nvim-web-devicons")
 			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
@@ -26,6 +25,10 @@ return {
 					expand = function(args)
 						require("luasnip").lsp_expand(args.body)
 					end,
+				},
+				window = {
+					-- completion = cmp.config.window.bordered(),
+					-- documentation = cmp.config.window.bordered(),
 				},
 				formatting = {
 					format = lspkind.cmp_format({
