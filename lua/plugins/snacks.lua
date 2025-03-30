@@ -27,24 +27,24 @@ return {
 						},
 						-- Config for the fuzzy finder
 						files = {
-							layout = {
-								layout = {
-									preset = "default",
-									cycle = true,
-									box = "horizontal",
-									width = 0.8,
-									min_width = 120,
-									height = 0.8,
-									{
-										box = "vertical",
-										border = "none",
-										title = "{title} {live} {flags}",
-										{ win = "input", height = 1, border = "single" },
-										{ win = "list", border = "single" },
-									},
-									{ win = "preview", title = "{preview}", border = "single", width = 0.7 },
-								},
-							},
+							-- layout = {
+							-- 	layout = {
+							-- 		preset = "default",
+							-- 		cycle = true,
+							-- 		box = "horizontal",
+							-- 		width = 0.8,
+							-- 		min_width = 120,
+							-- 		height = 0.8,
+							-- 		{
+							-- 			box = "vertical",
+							-- 			border = "none",
+							-- 			title = "{title} {live} {flags}",
+							-- 			{ win = "input", height = 1, border = "single" },
+							-- 			{ win = "list", border = "single" },
+							-- 		},
+							-- 		{ win = "preview", title = "{preview}", border = "single", width = 0.7 },
+							-- 	},
+							-- },
 						},
 					},
 				},
@@ -125,18 +125,6 @@ return {
 				"<leader>n",
 				function()
 					Snacks.picker.notifications()
-				end,
-			},
-			{
-				"gd",
-				function()
-					Snacks.picker.lsp_definitions()
-				end,
-			},
-			{
-				"gD",
-				function()
-					Snacks.picker.lsp_declarations()
 				end,
 			},
 			{

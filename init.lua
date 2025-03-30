@@ -6,6 +6,6 @@ vim.g.have_nerg_font = true
 require("config.lazy")
 require("config.options")
 require("config.keymaps")
-require("config.util")
+-- require("config.util")
 
-vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme kanagawa")

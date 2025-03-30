@@ -7,8 +7,8 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Lspconfig
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+-- vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+-- vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 
 -- Formatting
 vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
