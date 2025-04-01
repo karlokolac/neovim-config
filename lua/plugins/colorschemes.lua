@@ -37,4 +37,23 @@ return {
 			})
 		end,
 	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		init = function()
+			vim.cmd.colorscheme("catppuccin")
+		end,
+		config = function()
+			require("catppuccin").setup({
+				flavour = "mocha",
+				integrations = {
+					cmp = true,
+					gitsigns = true,
+					treesitter = true,
+				},
+				no_italic = true,
+			})
+		end,
+	},
 }

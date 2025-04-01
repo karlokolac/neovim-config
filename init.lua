@@ -8,4 +8,4 @@ require("config.options")
 require("config.keymaps")
 -- require("config.util")
 
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme catppuccin-mocha")
